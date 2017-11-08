@@ -28,7 +28,7 @@ var dashboardModule = angular.module('bank_Webportal.dashboard', [
             })
             .state('dashboard.label', {
                 url: '/label',
-                templateUrl: 'dashboard/templates/branch.html',
+                templateUrl: 'dashboard/templates/label.html',
                 controller: 'dashboardController as dashCtrl',
             });
 
@@ -43,10 +43,6 @@ var dashboardModule = angular.module('bank_Webportal.dashboard', [
         }
         // dashCtrl.serviceTypes = [{ id: "product", type: "Products", class: "prod box", icon: "gift" }, { id: "atm", type: "ATM's", class: "atm box", icon: "map-marker" }, { id: "branch", type: "Branches", class: "branch box", icon: "edit" }, { id: "label", type: "Labels", class: "labelbx box", icon: "stats" }];
         dashCtrl.init = function() {
-            dashCtrl.appCredentials = {
-                username: 'admin || Admin',
-                password: 'admin'
-            };
             dashCtrl.activeMenu = $state.current.name.split(".")[1];
             dashCtrl.fetchServiceData($state.current.name.split(".")[1]);
         }
