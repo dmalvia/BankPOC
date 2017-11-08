@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "poc-pwa-dec2c",
+    "bank-poc": "bank-poc"
+  }
+}
