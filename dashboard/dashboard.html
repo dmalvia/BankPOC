@@ -19,47 +19,27 @@ footer {
                 </a>
             </div>
             <ul class="nav">
-                <li data-ng-click="dashCtrl.setActive('product')" ng-class="{active : dashCtrl.activeMenu === 'product'}" >
+
+                <li data-ng-click="dashCtrl.setActive('product')" ng-class="{active : dashCtrl.activeMenu === 'product'}">
                     <a ui-sref=".product" >
-                        <i class="pe-7s-graph"></i>
+                        <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
                         <p>Products</p>
                     </a>
                 </li>
                 <li data-ng-click="dashCtrl.setActive('atm')" ng-class="{active : dashCtrl.activeMenu === 'atm'}">
                     <a ui-sref=".atm" >
-                        <i class="pe-7s-user"></i>
+                        <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
                         <p>Atm's</p>
                     </a>
                 </li>
                 <li data-ng-click="dashCtrl.setActive('branch')" ng-class="{active : dashCtrl.activeMenu === 'branch'}">
                     <a ui-sref=".branch" >
-                        <i class="pe-7s-note2"></i>
+                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
                         <p>Branches</p>
                     </a>
                 </li>
                 <li data-ng-click="dashCtrl.setActive('label')" ng-class="{active : dashCtrl.activeMenu === 'label'}">
                     <a ui-sref=".label" >
-                        <i class="pe-7s-news-paper"></i>
-                <li class="active">
-                    <a ui-sref=".product" data-ng-click="dashCtrl.fetchServiceData('product')">
-                        <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
-                        <p>Products</p>
-                    </a>
-                </li>
-                <li>
-                    <a ui-sref=".atm" data-ng-click="dashCtrl.fetchServiceData('atm')">
-                        <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-                        <p>Atm's</p>
-                    </a>
-                </li>
-                <li>
-                    <a ui-sref=".branch" data-ng-click="dashCtrl.fetchServiceData('branch')">
-                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
-                        <p>Branches</p>
-                    </a>
-                </li>
-                <li>
-                    <a ui-sref=".label" data-ng-click="dashCtrl.fetchServiceData('label')">
                         <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
                         <p>Label</p>
                     </a>
