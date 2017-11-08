@@ -55,14 +55,6 @@ var dashboardModule = angular.module('bank_Webportal.dashboard', [
             dashCtrl.activeMenu = menuItem
         }
 
-        dashCtrl.login = function() {
-            if (dashCtrl.uName == dashCtrl.appCredentials.username && dashCtrl.uPass == dashCtrl.appCredentials.password) {
-                $state.go('dashboard', { 'type': 'branches', });
-            } else {
-                console.log("Invalid Credentials");
-            }
-        }
-
         dashCtrl.fetchServiceData = function(type) {
             fetch(dashCtrl.config.baseURI + "services/" + type, {
                     header: {}
