@@ -98,7 +98,7 @@ lbd = {
     initRightMenu: debounce(function(){
         if(!navbar_initialized){
             $sidebar_wrapper = $('.sidebar-wrapper');
-            $navbar = $('nav').find('.navbar1-collapse').html();
+            $navbar = $('nav').find('.navbar1-collapse1').html();
 
             mobile_menu_content = '';
 
