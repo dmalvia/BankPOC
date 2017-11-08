@@ -44,7 +44,7 @@ $(document).ready(function(){
 $('body').on('touchstart.dropdown', '.dropdown-menu', function (e) { e.stopPropagation(); });
 });
 
-$(document).on('click', '.navbar-toggle', function(){
+$(document).on('click', '.navbar1-toggle', function(){
     $toggle = $(this);
 
     if(lbd.misc.navbar_menu_visible == 1) {
@@ -98,7 +98,7 @@ lbd = {
     initRightMenu: debounce(function(){
         if(!navbar_initialized){
             $sidebar_wrapper = $('.sidebar-wrapper');
-            $navbar = $('nav').find('.navbar-collapse').html();
+            $navbar = $('nav').find('.navbar1-collapse').html();
 
             mobile_menu_content = '';
 
