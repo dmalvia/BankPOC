@@ -6,10 +6,32 @@ var dashboardModule = angular.module('bank_Webportal.dashboard', [
 
     .config(['$stateProvider', function($stateProvider) {
         $stateProvider.state('dashboard', {
-            url: '/dashboard/:type',
+            url: '/dashboard',
             templateUrl: 'dashboard/dashboard.html',
             controller: 'dashboardController as dashCtrl',
         });
+        $stateProvider
+            .state('dashboard.product', {
+                url: '/product',
+                templateUrl: 'dashboard/templates/product.html',
+                controller: 'dashboardController as dashCtrl',
+            })
+            .state('dashboard.atm', {
+                url: '/atm',
+                templateUrl: 'dashboard/templates/atm.html',
+                controller: 'dashboardController as dashCtrl',
+            })
+            .state('dashboard.branch', {
+                url: '/branch',
+                templateUrl: 'dashboard/templates/branch.html',
+                controller: 'dashboardController as dashCtrl',
+            })
+            .state('dashboard.label', {
+                url: '/label',
+                templateUrl: 'dashboard/templates/branch.html',
+                controller: 'dashboardController as dashCtrl',
+            });
+
     }])
 
     .controller('dashboardController', ['$scope', '$stateParams', function($scope, $stateParams) {
