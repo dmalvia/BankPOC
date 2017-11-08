@@ -14,31 +14,31 @@ footer {
     -->
         <div class="sidebar-wrapper">
             <div class="logo">
-                <a ui-sref="home" class="simple-text">
+                <a ui-sref="home" class="simple-text" >
                     BANK Online
                 </a>
             </div>
             <ul class="nav">
                 <li class="active">
-                    <a ui-sref=".product">
+                    <a ui-sref=".product" data-ng-click="dashCtrl.fetchServiceData('product')">
                         <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
                         <p>Products</p>
                     </a>
                 </li>
                 <li>
-                    <a ui-sref=".atm">
+                    <a ui-sref=".atm" data-ng-click="dashCtrl.fetchServiceData('atm')">
                         <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
                         <p>Atm's</p>
                     </a>
                 </li>
                 <li>
-                    <a ui-sref=".branch">
+                    <a ui-sref=".branch" data-ng-click="dashCtrl.fetchServiceData('branch')">
                         <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
                         <p>Branches</p>
                     </a>
                 </li>
                 <li>
-                    <a ui-sref=".label">
+                    <a ui-sref=".label" data-ng-click="dashCtrl.fetchServiceData('label')">
                         <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
                         <p>Label</p>
                     </a>
