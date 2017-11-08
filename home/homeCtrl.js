@@ -29,7 +29,7 @@ var collabModule = angular.module('bank_Webportal.home', [
 
 
 
-    .controller('homeController', ['$scope', '$http', function($scope, $http) {
+    .controller('homeController', ['$scope', function($scope) {
 
 
     }])
