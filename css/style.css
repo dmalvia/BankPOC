@@ -22,17 +22,21 @@ body{
 .w3layouts-banner-top{
     background: url(../images/home/2.jpg) no-repeat 0px 0px;
     background-size: cover;
+    background-color: rgba(0,0,0,0.5);
 }
 .w3layouts-banner-top1{
 	background: url(../images/home/4.jpg) no-repeat 0px 0px;
-    background-size: cover;	
+    background-size: cover;
+    background-color: rgba(0,0,0,0.5);	
 }
 .w3layouts-banner-top2{
 	background: url(../images/home/3.jpg) no-repeat 0px 0px;
-    background-size: cover;	
+    background-size: cover;
+    background-color: rgba(0,0,0,0.5);	
 }
 .agileinfo-dot{
 	background: url(../images/home/dott.png)repeat 0px 0px;
+    background-color: rgba(0,0,0,0.5);
     background-size: 2px;
     -webkit-background-size: 2px;
     -moz-background-size: 2px;
@@ -521,6 +525,7 @@ body{
 /*-- //services --*/
 .testimonial{
 	background:url(../images/home/1.jpg) no-repeat 0px 0px;
+    background-color: #dfdfdf;
 	background-size:cover;
 }
 .testimonial-dot{
@@ -591,6 +596,7 @@ body{
 /*-- blog --*/
 .w3-agile-post-img a {
     background: url(../images/home/5.jpg) no-repeat 0px 0px;
+    background-color: #dfdfdf;
     background-size: cover;
     min-height: 230px;
     display: block;
@@ -598,10 +604,12 @@ body{
 }
 .w3-agile-post-img1 a {
     background: url(../images/home/6.jpg) no-repeat 0px 0px;
+    background-color: #dfdfdf;
     background-size: cover;
 }
 .w3-agile-post-img2 a {
     background: url(../images/home/10.jpg) no-repeat 0px 0px;
+    background-color: #dfdfdf;
     background-size: cover;
 }
 .w3-agile-post-img1 a:focus{
@@ -1219,6 +1227,7 @@ button.btn:active:focus, button.btn.active:focus { outline: 0; opacity: 0.6; bac
 }
 .top-content {
     background:url("../images/login/1.jpg") fixed center center;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .top-content .text {
