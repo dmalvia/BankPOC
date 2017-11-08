@@ -29,7 +29,16 @@ var loginModule = angular.module('bank_Webportal.login', [
 
 
 
-    .controller('loginController', ['$scope', '$http', function($scope, $http) {
-            /*Write business logic here*/
+    .controller('loginController', ['$scope', '$state', function($scope, $state) {
+        /*Write business logic here*/
+        var loginCtrl = this;
+
+        loginCtrl.signIn = function(username, password) {
+            if ((username == 'admin' || username == 'Admin') && password == 'admin') {
+                $state.go('dashboard.product');
+            } else {
+                alert("Invalid Credentials");
+            }
+        }
 
     }])

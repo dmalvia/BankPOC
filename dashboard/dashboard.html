@@ -19,26 +19,27 @@ footer {
                 </a>
             </div>
             <ul class="nav">
-                <li class="active">
-                    <a ui-sref=".product" data-ng-click="dashCtrl.fetchServiceData('product')">
+
+                <li data-ng-click="dashCtrl.setActive('product')" ng-class="{active : dashCtrl.activeMenu === 'product'}">
+                    <a ui-sref=".product" >
                         <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
                         <p>Products</p>
                     </a>
                 </li>
-                <li>
-                    <a ui-sref=".atm" data-ng-click="dashCtrl.fetchServiceData('atm')">
+                <li data-ng-click="dashCtrl.setActive('atm')" ng-class="{active : dashCtrl.activeMenu === 'atm'}">
+                    <a ui-sref=".atm" >
                         <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
                         <p>Atm's</p>
                     </a>
                 </li>
-                <li>
-                    <a ui-sref=".branch" data-ng-click="dashCtrl.fetchServiceData('branch')">
+                <li data-ng-click="dashCtrl.setActive('branch')" ng-class="{active : dashCtrl.activeMenu === 'branch'}">
+                    <a ui-sref=".branch" >
                         <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
                         <p>Branches</p>
                     </a>
                 </li>
-                <li>
-                    <a ui-sref=".label" data-ng-click="dashCtrl.fetchServiceData('label')">
+                <li data-ng-click="dashCtrl.setActive('label')" ng-class="{active : dashCtrl.activeMenu === 'label'}">
+                    <a ui-sref=".label" >
                         <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
                         <p>Label</p>
                     </a>
