@@ -29,7 +29,7 @@ var dashboardModule = angular.module('bank_Webportal.dashboard', [
         dashCtrl.init = function() {
             dashCtrl.display = true;
             dashCtrl.appCredentials = {
-                username: 'admin',
+                username: 'admin || Admin',
                 password: 'admin'
             };
             dashCtrl.activeMenu = dashCtrl.serviceTypes[0].type;
