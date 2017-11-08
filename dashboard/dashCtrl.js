@@ -34,10 +34,9 @@ var dashboardModule = angular.module('bank_Webportal.dashboard', [
 
     }])
 
-    .controller('dashboardController', ['$scope', '$stateParams', function($scope, $stateParams) {
+    .controller('dashboardController', ['$scope', '$state', function($scope, $state) {
         var dashCtrl = this;
         /*Write business logic here*/
-        console.log('StateParam' + $stateParams.type);
         dashCtrl.dispProp = {
             product: true,
             atm: false,
@@ -55,7 +54,7 @@ var dashboardModule = angular.module('bank_Webportal.dashboard', [
                 password: 'admin'
             };
             dashCtrl.activeMenu = dashCtrl.serviceTypes[0].type;
-            dashCtrl.fetchServiceData($stateParams.type);
+            dashCtrl.fetchServiceData($state.current.name.split(".")[1]);
         }
 
         dashCtrl.setActive = function(menuItem) {
