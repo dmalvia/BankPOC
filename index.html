@@ -63,12 +63,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
                         <nav>
                             <ul class="nav navbar-nav">
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li><a href="#about" class="scroll">About</a></li>
-                                <li><a href="#markets" class="scroll">Markets</a></li>
-                                <li><a href="#services" class="scroll">Services</a></li>
-                                <li><a href="#blog" class="scroll">Blog</a></li>
-                                <li><a href="#mail" class="scroll">Mail Us</a></li>
+                                <li class="active"><a ui-sref="home">Home</a></li>
+                                <li><a ui-sref="dashboard" class="scroll">Products</a></li>
+                                <li><a ui-sref="dashboard" class="scroll">Atm's</a></li>
+                                <li><a ui-sref="dashboard" class="scroll">Branches</a></li>
+                                <li><a ui-sref="dashboard" class="scroll">Labels</a></li>
+                                <li><a ui-sref="login" class="scroll">Login /Sign In</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -143,17 +143,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             itemWidth: 102,
             itemMargin: 5,
             asNavFor: '#slider'
-        });
-
-        $('#slider').flexslider({
-            animation: "slide",
-            controlNav: false,
-            animationLoop: true,
-            slideshow: true,
-            sync: "#carousel",
-            start: function(slider) {
-                $('body').removeClass('loading');
-            }
         });
     });
     </script>

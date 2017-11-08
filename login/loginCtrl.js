@@ -1,13 +1,13 @@
 'use strict';
 
-var collabModule = angular.module('bank_Webportal.login', [
+var loginModule = angular.module('bank_Webportal.login', [
         'ui.router',
     ])
 
     .config(['$stateProvider', function($stateProvider) {
         $stateProvider.state('login', {
             url: '/login',
-            templateUrl: 'apps/collaboration/collab.html',
+            templateUrl: 'login/login.html',
             controller: 'loginController as loginCtrl',
         });
     }])
