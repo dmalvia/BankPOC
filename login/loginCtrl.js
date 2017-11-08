@@ -30,6 +30,6 @@ var loginModule = angular.module('bank_Webportal.login', [
 
 
     .controller('loginController', ['$scope', '$http', function($scope, $http) {
-
+            /*Write business logic here*/
 
     }])
