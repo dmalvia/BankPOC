@@ -37,23 +37,17 @@ var dashboardModule = angular.module('bank_Webportal.dashboard', [
     .controller('dashboardController', ['$scope', '$state', function($scope, $state) {
         var dashCtrl = this;
         /*Write business logic here*/
-        dashCtrl.dispProp = {
-            product: true,
-            atm: false,
-            branch: false,
-            label: false
-        }
+
         dashCtrl.config = {
             "baseURI": "https://bank-data.herokuapp.com/bankapi/"
         }
-        dashCtrl.serviceTypes = [{ id: "product", type: "Products", class: "prod box", icon: "gift" }, { id: "atm", type: "ATM's", class: "atm box", icon: "map-marker" }, { id: "branch", type: "Branches", class: "branch box", icon: "edit" }, { id: "label", type: "Labels", class: "labelbx box", icon: "stats" }];
+        // dashCtrl.serviceTypes = [{ id: "product", type: "Products", class: "prod box", icon: "gift" }, { id: "atm", type: "ATM's", class: "atm box", icon: "map-marker" }, { id: "branch", type: "Branches", class: "branch box", icon: "edit" }, { id: "label", type: "Labels", class: "labelbx box", icon: "stats" }];
         dashCtrl.init = function() {
-            dashCtrl.display = true;
             dashCtrl.appCredentials = {
                 username: 'admin || Admin',
                 password: 'admin'
             };
-            dashCtrl.activeMenu = dashCtrl.serviceTypes[0].type;
+            dashCtrl.activeMenu = $state.current.name.split(".")[1];
             dashCtrl.fetchServiceData($state.current.name.split(".")[1]);
         }
 
@@ -70,8 +64,6 @@ var dashboardModule = angular.module('bank_Webportal.dashboard', [
         }
 
         dashCtrl.fetchServiceData = function(type) {
-            dashCtrl.dispProp = {};
-            dashCtrl.dispProp[type] = true;
             fetch(dashCtrl.config.baseURI + "services/" + type, {
                     header: {}
                 })
