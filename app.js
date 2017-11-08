@@ -5,7 +5,7 @@ var bank_Webportal = angular.module('bank_Webportal', [
     'ui.router',
     'bank_Webportal.home',
     'bank_Webportal.login',
-    // 'bank_Webportal.dashboard'
+    'bank_Webportal.dashboard'
 ]).
 config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise('/home');

@@ -1,6 +1,6 @@
 'use strict';
 
-var collabModule = angular.module('bank_Webportal.home', [
+var homeModule = angular.module('bank_Webportal.home', [
         'ui.router',
     ])
 
@@ -12,24 +12,7 @@ var collabModule = angular.module('bank_Webportal.home', [
         });
     }])
 
-
-    .directive('ngEnter', function() {
-        return function(scope, element, attrs) {
-            element.bind("keydown keypress", function(event) {
-                if (event.which === 13) {
-                    scope.$apply(function() {
-                        scope.$eval(attrs.ngEnter);
-                    });
-
-                    event.preventDefault();
-                }
-            });
-        };
-    })
-
-
-
     .controller('homeController', ['$scope', function($scope) {
-
+        /*Write business logic here*/
 
     }])
