@@ -1276,12 +1276,12 @@ button.btn:active:focus, button.btn.active:focus { outline: 0; opacity: 0.6; bac
     font-size: 66px;
     color: #fff;
     line-height: 100px;
-    text-align: right;
+    /*text-align: right;*/
     opacity: 0.3;
 }
 
 .form-bottom {
-    padding: 25px 25px 30px 25px;
+    padding: 0px 25px 30px 25px;
     background: #444;
     background: rgba(0, 0, 0, 0.3);
     -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;
