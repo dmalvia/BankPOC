@@ -21,8 +21,14 @@ var precacheFiles = [
     '/images/home',
     '/images/login',
     '/images/icons',
-    '/templates/dashboard.html',
-    '/templates/login.html',
+    'index.html',
+    '/home/home.html',
+    '/dashboard/dashboard.html',
+    '/dashboard/templates/product.html',
+    '/dashboard/templates/atm.html',
+    '/dashboard/templates/branch.html',
+    '/dashboard/templates/label.html',
+    '/login/login.html',
     'js/jquery-1.11.1.min.js',
     'js/bootstrap.js',
     'vendor/angular.min.js',
@@ -39,9 +45,7 @@ var precacheFiles = [
     'js/move-top.js',
     'js/move-top.js',
     'js/easing.js',
-    'js/dashboard/light-bootstrap-dashboard.js',
-    'index.html',
-
+    'js/dashboard/light-bootstrap-dashboard.js'
 ];
 
 //Install stage sets up the cache-array to configure pre-cache content
